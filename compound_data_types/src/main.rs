@@ -35,7 +35,7 @@ fn main() {
     println!("Book Slice: {:?} ", book_slices);
 
     //add to string, Data is by default immutable in Rust
-    //example of this process
+    //example of this process on code
 
     let mut stone_cold = String::from("HELL, ");
     stone_cold.push_str("YEAH!");
