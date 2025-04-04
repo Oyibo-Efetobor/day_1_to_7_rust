@@ -43,6 +43,6 @@ fn main() {
 
     //B- &str (string slice)
     let b_string = String::from("Hello, World!");
-    let slice= &b_string[0..3];
+    let slice= &b_string[0..5];
     println!("Slice Value: {}", slice);
 }
