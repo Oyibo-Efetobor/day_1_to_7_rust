@@ -13,7 +13,11 @@ fn main() {
     add(4, 6);
     println!("Value of y is {}", add(4, 6));
 
-
+    //calling the BMI function
+    let weight = 70.0;
+    let height = 1.82;
+    let bmi = calculate_bmi(weight, height);
+    println!("Your BMI is: {:.2} ", bmi)
 }
 
 
@@ -46,3 +50,8 @@ fn add(a: i32, b: i32) -> i32{
 //Examples of Expression : 5, true & false, add(3,4), if condition 
 // {value 1} else {value 2}
 
+// BMI = weight (kg) / height (m)^2
+
+fn calculate_bmi(weight_kg: f64, height_m: f64) -> f64{
+    weight_kg / (height_m * height_m)
+}
