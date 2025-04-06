@@ -17,7 +17,11 @@ fn main() {
     let weight = 70.0;
     let height = 1.82;
     let bmi = calculate_bmi(weight, height);
-    println!("Your BMI is: {:.2} ", bmi)
+    println!("Your BMI is: {:.2} ", bmi);
+
+    println!("multiplication of numbers is: {}", multiply_num(4, 6));
+
+
 }
 
 
@@ -54,4 +58,8 @@ fn add(a: i32, b: i32) -> i32{
 
 fn calculate_bmi(weight_kg: f64, height_m: f64) -> f64{
     weight_kg / (height_m * height_m)
+}
+
+fn multiply_num(num_1: i32, num_2: i32) -> i32{
+    num_1 * num_2
 }
